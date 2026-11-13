@@ -1,0 +1,117 @@
+:root {
+  --navy: #101d30;
+  --navy-light: #192b42;
+  --gold: #b69a65;
+  --gold-light: #d1bb8c;
+  --white: #ffffff;
+  --cream: #f6f4ef;
+  --charcoal: #30343a;
+  --muted: #777e87;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: var(--charcoal);
+  line-height: 1.7;
+  background: var(--white);
+}
+
+a { text-decoration: none; color: inherit; }
+
+.container {
+  width: min(1160px, 90%);
+  margin: auto;
+}
+
+header {
+  background: var(--navy);
+  color: white;
+  border-bottom: 1px solid rgba(255,255,255,.12);
+}
+
+nav {
+  min-height: 94px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.brand {
+  font-family: Georgia, serif;
+  font-size: 25px;
+  letter-spacing: 4px;
+  color: white;
+}
+
+.brand span { color: var(--gold-light); }
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.nav-links a:hover { color: var(--gold-light); }
+
+.hero {
+  background:
+    radial-gradient(ellipse at 80% 25%, #293b50 0%, transparent 48%),
+    linear-gradient(120deg, #101d30, #172a40);
+  color: white;
+  padding: 125px 0 135px;
+}
+
+.eyebrow {
+  color: var(--gold-light);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 27px;
+}
+
+.hero h1 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(42px, 6vw, 76px);
+  line-height: 1.12;
+  max-width: 850px;
+  margin-bottom: 28px;
+}
+
+.hero h1 span { color: var(--gold-light); }
+
+.hero p {
+  max-width: 680px;
+  color: #d5dbe2;
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 40px;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 27px;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.button-gold {
+  background: var(--gold);
+  color: var(--navy);
+}
